@@ -1,0 +1,42 @@
+﻿* User
+
+1 - user_id (mã người dùng)
+2 - username (tên đăng nhập)
+3 - password (mật khẩu)
+4 - policy 
++ member (chỉ frontend)
++ editor (quản lý nội dung backend - news, menu)
++ admin (quản lý hết backend)
+
+* Cơ chế quản lý quyền thông qua Login
+
+Xử lý trên index.php
+
+1/ - Trên cùng index.php kiểm tra xem đã có session chưa?
++ Nếu chưa có => quay về trang login.php
++ Nếu đã có => kiểm tra quyền session xác định vào từng phần
+
+2/ - Khi đã quyền policy trong session
++ Trên đỉnh các trang bên trong admin phân quyền 
++ Đỉnh trang quản lý user thì 
+     nếu không phải quyền admin => hiển thị thông báo Bạn không có quyền 
++ Đỉnh trang quản lý menu thì
+     nếu không phải quyền admin hoặc editor => hiển thị thông báo không có quyền
+     
+Xử lý trong trang login.php
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+// Responsive for Table and PC
+// Medium devices (tablets, 768px and up)
+@media(min-width: 768px) {
+    .contact-wrapper {
+        overflow: auto;
+        
+        h3 {
+            margin: 0;
+        }
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+       //contact-info
+       .contact-info {
+           width: 30%;
+           float: left;
+           padding-left: 15px;
+           padding-right: 15px;
+    }
+    //contact-form
+    .contact-form {
+        width: 70%;
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: $border_radius;
+
+        .row {
+            display: block;
+            overflow: auto;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            .col50 {
+                width: 50%;
+                display: block;
+                float: left;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 1170px;
+        margin: auto;
+    }
+}

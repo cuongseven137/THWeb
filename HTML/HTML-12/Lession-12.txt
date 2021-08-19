@@ -1,0 +1,6 @@
+Phần 4: Tạo plugin jQuery
+
+
+Bước 1: Tạo HTML, CSS cho thành phần cần tạo Plugin
+Bước 2: Viết jQuery trực tiếp điều khiển thành phần HTML CSS
+Bước 3: Định nghĩa Plugin theo các Settings

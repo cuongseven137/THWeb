@@ -1,0 +1,1 @@
+<a href="#about" class="get-started-btn scrollto">Get Started</a>

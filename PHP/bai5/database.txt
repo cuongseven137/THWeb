@@ -1,0 +1,5 @@
+﻿Router - định tuyến nội dung (dự tham số url)
+
+- xác định page cần hiển thị (view=home)
+- xác định controller cần làm việc (controller=...)
+- 

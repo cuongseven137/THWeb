@@ -1,0 +1,18 @@
+﻿MVC - Model View Controller
+
+3 loại đối tượng phục vụ cho 1 đối tượng cụ thể
+- Model: các class xử lý dữ liệu
+- View: các class để hiển thị dữ liệu
+- Controller: các class điều khiển
+
+
+SimpleCalc - Đối tượng tính (+ - * /) 2 số
+
+1/ Dữ liệu
++ biến so1
++ biến so2
++ biến ketqua
+
+
+
+

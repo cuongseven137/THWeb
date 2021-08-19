@@ -1,0 +1,3 @@
+
+- Khi làm HTML Responsive vẫn làm đầy đủ xem bản PC
+- Khi làm CSS Responsive tối ưu làm từ Mobile First (code giao diện Mobile > Table > PC)

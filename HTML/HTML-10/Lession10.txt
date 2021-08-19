@@ -1,0 +1,56 @@
+
+- Javascript: Ngôn ngữ lập trình trên nền tảng trình duyệt Web
+- Javascript sử dụng khi HTML và CSS không thể đáp ứng yêu cầu thiết kế, chức năng giao diện Web
+- File mã nguồn Javascript lưu vào *.js và gắn vào file HTML (nên gắn trước thẻ body)
+
+// Viết thông tin
+console.log("Hello Javascript is ok!"); // Viết vào tab Console của Browser
+//alert("Đây là bảng thông báo Javascript!"); // Hiển thị hộp thông báo trên Website
+
+
+// khai báo biến lưu trữ giá trị
+var myName = "John Nguyen"; 
+
+
+// Hiển thị thông tin
+console.log("My name is " + myName);
+myName = "Hoang Duong";
+
+console.log("My name is " + myName);
+console.log("My name is " + myName);
+
+// Nhiều lệnh trong một lượt - function()
+
+function myFuncion(name = "") {
+
+    var myName = name; 
+    console.log("My name is " + myName);
+    
+    myName = "Hoang Duong";   
+    console.log("My name is " + myName);
+
+}
+
+myFuncion("Hoang"); // Thực hiện một hàm
+myFuncion("Duong");
+
+
+// Lập trình hướng đối tượng
+
+// Tạo ĐỊNH NGHĨA đối tượng - Class
+function theMan(name) {
+
+    var firstName = "Noname";   // khai báo biến lưu giá trị đối tượng
+
+    // Thuộc tính tên
+    this.myName = function(){
+        console.log("My name is " + name);
+    }    
+}
+
+// Yêu cầu tạo ĐỐI TƯỢNG
+var theDuong = new theMan("Hoàng Dương");
+var theHong = new theMan("Phi Hồng");
+
+theDuong.myName();
+theHong.myName();

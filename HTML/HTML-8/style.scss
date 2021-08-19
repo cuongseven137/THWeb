@@ -1,0 +1,213 @@
+// Import
+
+@import 'vars';
+@import 'mixins';
+
+
+// Layout Mobile
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    font-family: $body_font;
+    font-size: $body_font_size;
+    color: $text_color;
+}
+
+.container {
+    padding: 15px;
+}
+
+h1 {
+    font-family: $heading_font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 109.12%;
+    /* identical to box height, or 33px */
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+
+    .subtitle {
+        display: block;
+        font-family: Roboto;        
+        font-weight: 700;
+        font-size: 0.93rem;
+        line-height: 1.06rem;        
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+
+        @include gradient_background($gradient_color_1, $gradient_color_2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        margin-bottom: 15px;
+    }
+
+    &::before {
+        content: "";
+        font-size: 0;
+        width: 4px;
+        height: 4px;        
+        @include gradient_background($gradient_color_1, $gradient_color_2);
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -20px;
+        left: calc(50% - 4px - 25px);
+    }
+
+    &::after {
+        content: "";
+        font-size: 0;
+        width: 50px;
+        height: 4px;        
+        @include gradient_background($gradient_color_1, $gradient_color_2);
+        display: inline-block;
+        border-radius: 3px;
+        position: absolute;
+        bottom: -20px;
+        left: calc(50% + 4px - 25px);        
+    }
+
+}
+
+// Contact Infor
+
+.contact-info {
+
+    h3 {
+        font-family: $body_font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        /* identical to box height */
+        text-transform: capitalize;
+        color: #FFFFFF;
+
+        @include gradient_background($gradient_color_1, $gradient_color_2);
+        padding: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            border-bottom: 1px solid $border_color;
+            padding: 20px 0;
+            overflow: auto;
+            
+            &:last-child {
+                border: none;
+            }
+
+            .icon {
+                display: inline-block;
+                width: 40px;
+                float: left;
+                height: max-content;
+            }
+
+            p {
+                margin: 0;
+                padding: 5px 0;
+                width: calc(100% - 40px);
+                float: left;
+
+                a {
+                    text-decoration: none;
+                    color: $text_color_light1;
+                    font-style: normal;
+                    display: block;
+                    padding: 8px 0;                
+                }
+    
+                a {
+                    &[href*="mailto"] {
+                        @include gradient_background($gradient_color_1, $gradient_color_2);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }            
+        }
+    }
+
+}
+.contact-form {
+    background: #F0F0F0;
+    border: 1px solid #E0E0E0;
+    padding: 10px;
+    form {
+        h3 {
+            font-family: $body_font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            text-transform: capitalize;
+            color:$text_color;
+            padding: 30px 5px;
+            margin: 0;
+        }
+        input, textarea {
+            display: block;
+            width: 100%;
+            border: solid 1px $border_color;
+            border-radius: $border_radius;
+            padding: 10px;
+            margin-bottom: 14px;
+            font-family: $body_font;
+            
+            &::placeholder {
+                color: $text_color_light2;
+            }
+            &[type*="submit"] {
+                @include vn_button($border_radius_m, $gradient_color_1, $gradient_color_2);
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            &:focus {
+                outline: none;
+                border-color: blue;
+                color: green; 
+            }
+        }
+    }
+}
+
+.buttom-wrapper {
+    text-align: center;
+    margin-top: 15px;
+
+    .link-buttom {
+        @include vn_button($border_radius_m, $gradient_color_1, $gradient_color_2);
+        transition: all 0.5s;
+
+        &:hover {
+            // transform: scale(1.1);
+            // transform: translate(15px);
+            font-size: 1.5rem;
+            transition: all 0.5s;
+        }
+    }
+}
+
+
+// Import Responsive Table and PC
+@import 'responsive';
+
+

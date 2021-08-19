@@ -1,0 +1,8 @@
+﻿Database - MySQL
+
+Thông tin cần thiết
+
+- tên máy chủ (localhost)
+- tên csdl (vnskills)
+- tên truy cập (username)
+- mật khẩu ( trắng )

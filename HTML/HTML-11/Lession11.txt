@@ -1,0 +1,46 @@
+jQuery - Thư viện viết bằng Javascript
+
+Ưu điểm
+
+- Viết ngắn gọn và dễ dàng hơn
+- Viết thân thiện với Frontend (HTML, CSS)
+- Xây dựng những thành phần UI, Frontend sử dụng lại trực quan (Plugin)
+
+
+Tìm hiểu
+
+1/ Cách setup và sử dụng jQuery đơn thuần (Bước triển khai jQuery)
+2/ Các thao tác cơ bản jQuery
+3/ Sử dụng Plugin (có sẵn, người khác tạo => dùng và tùy biến)
+4/ Tự tạo Plugin (HTML, CSS, jQuery) 
+
+
+================================================================
+
+Phần 1: Sử dụng jQuery cơ bản
+
+Bước 1: Gắn jQuery vào trang Web
+- Tải jQuery từ https://jquery.com/Download/ lưu vào thư mục Web
+- Gắn link file vào trước các file *.js thông thường main.js (trước thẻ </body>)
+
+Bước 2: Kiểm tra và tạo cấu trúc code kiểu jQuery cơ bản
+- Viết cấu trúc cơ bản jQuery vào file script.js
+
+
+Phần 2: Các lệnh thông dụng jQuery
+
+Các nhóm lệnh
+
+- Nhóm selector (chọn html theo tên CSS)
+- Nhóm thao tác HTML (lấy giá trị, thay đổi nội dung, thêm bớt html,...)
+- Nhóm thao tác CSS (định dạng CSS, thêm bớt class)
+
+Phần 3: Sử dụng Plugin jQuery cho website (thư viện jquery gốc / thư viện open )
+- Gắn plugin vào
+- Custom tùy biến giá trị
+
+* Lưu ý: nên sài các plugin có webiste riêng
+
+
+
+

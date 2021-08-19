@@ -1,0 +1,208 @@
+// Variable
+
+$brand_color: rgba(208,0,0,1);
+$hover_color: rgba(208,0,0,0.5);
+
+// Import
+@import 'tab-header'; 
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";     
+}
+
+
+.feature_slides {
+    width: 1155px;
+    margin: auto;
+    position: relative;
+
+    .feature_container {    
+        overflow: auto; 
+        display: none;       
+    }
+
+    .tab_item{
+        display: none; // ẩn tròn
+
+
+        &+label {         // hover text
+            
+            font-family: "Montserrat";
+            font-size: 13px;
+            line-height: 24.5px;    
+            text-decoration: none;
+            font-weight: 700;
+            color: black;
+            padding-left: 12px;
+            padding-right: 12px;           
+
+
+            position: absolute;
+            top: 10px;
+            
+            &.num1{
+                right: 170px;
+            }
+
+            &.num2{
+                right: 90px;
+            }
+
+            &.num3{
+                right: 0;
+            }
+
+            &:hover{
+                color: $brand_color;
+                cursor: pointer;
+            }
+        }
+        
+        &:checked{     // đổi màu text khi check tròn       
+            &+label{
+                color: $brand_color;
+                &+.feature_container{
+                    display: block;
+                }
+            }    
+        }
+    }
+}
+
+/* Feature item - Large */
+
+.feature_item {
+    width: 693px;
+    position: relative;
+    float: left;
+    padding: 5px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h3 {
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        bottom: 53px;
+        margin: 0;
+    
+        font-family: Montserrat; 
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        /* or 125% */  
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.meta_link {
+    position: absolute;    
+    left: 30px;
+    right: 30px;
+    bottom: 20px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 24px;
+
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+
+.comment, .shared {
+    float: right;
+    padding: 0 10px;
+}
+
+
+.category {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 24px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;   
+
+    span {
+
+        &:first-child {            
+            display: inline-block;
+            background-color: $brand_color;
+            padding: 0px 10px;    
+        }
+
+        &:last-child {
+            position: absolute;    
+            right: -10px;
+            display: inline-block;    
+            height: 0;
+            width: 0;    
+            border-left: solid 10px $brand_color;    
+            border-bottom: solid 24px transparent;
+        }
+
+    }
+    
+    
+}
+
+.category {
+    &:hover {
+        span {
+            &:first-child {
+                background-color: $hover_color;
+                transition: 0.5s;
+            }
+
+            &:last-child {
+                border-left: solid 10px $hover_color;    
+                transition: 0.5s;
+            }
+        } 
+    }
+}
+
+/* Feature Item - Small */
+.feature_item {
+    &.small{
+        width: 231px;
+
+        h3 {
+            font-size: 11.2px;
+            line-height: 16px;
+        
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .category {
+            left: 10px;
+            top: 10px;
+        }
+    }   
+}

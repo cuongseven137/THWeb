@@ -1,0 +1,47 @@
+﻿Sử dụng SCSS
+
+1/Tạo biến
+
+    $ten_bien: gia_tri;
+
+Dùng biến
+
+    color: $ten_bien;
+
+
+
+2/ Viết lồng
+
+    ten_cha {
+
+       ten_con {
+           ...
+       }     
+
+       &:hover {
+           ....
+       }
+
+       &:first-child {
+           ...
+       }
+
+    }    
+
+3/ Ghép file khác vào file scss chính
+
+- File cần ghép file_mod.css
+- File chính 
+
+@import 'file_mod';
+
+- File cần ghép _file_mod.scss
+- File chính 
+
+@import 'file_mod';
+
+
+
+
+
+

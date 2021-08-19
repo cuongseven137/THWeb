@@ -1,0 +1,20 @@
+
+- Khi làm HTML Responsive vẫn làm đầy đủ xem bản PC
+- Khi làm CSS Responsive tối ưu làm từ Mobile First (code giao diện Mobile > Table > PC)
+
+Chú ý về Responsove
+
+- Nếu có thiết kế thì làm theo thiết kế
+- Nếu không có thiết kế các thành phần Responisve thay đổi một số trạng thái như sau
++ Thay đổi kích thước cột (tính %) - Mobile 100%, Tablet 2 cột, PC 3 cột ...
++ Ẩn hiện thành phần - Mobile (ẩn đi display:none), PC thì hiện lên
++ Căn chỉnh lại cho phù hợp bố cục - Mobile, Tablet (logo center)  PC thì (logo left)
++ Khi Mobie 2 bên cách lề 1 khoảng bằng nhau
+
+
+Bổ sung về chuyển động CSS (animation / transition)
+
+- Transition (chuyển động thay đổi trạng thái - micro action)
+- Bước làm
++ Làm thuộc tính thay đổi trạng thái bình thường (hover) => Chắc chắn hoạt động (tất nhiên chưa mượt)
++ Bổ sung dưới thuộc tính thay đổi trạng thái đó transition (cả đi và về trạng thái cũ)

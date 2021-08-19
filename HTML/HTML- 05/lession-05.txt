@@ -1,0 +1,16 @@
+﻿Định dạng thành phần trôi nổi (chiều thứ 3), định tọa độ (không bị đẩy ảnh hưởng bởi các thành phần khác)
+
+Các giá trị của position:
++ static (mặc định browser => không trôi nổi)
++ relative (tính tương đối so với gốc / vị trí ban đầu của nó)
++ fixed (tính theo cửa sổ trình duyệt)
+
+================
+
+- Xác định thành phần tham chiếu (gốc) để định vị theo => đặt position: relative
+- Xác định thành phần cần định vị (position) => đặt position: absolute
+- Đặt tọa độ theo (top, bottom, left, right)
+
+
+
+

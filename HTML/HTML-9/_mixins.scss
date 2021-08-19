@@ -1,0 +1,27 @@
+// Mixins
+
+@mixin gradient_background($color1, $color2){
+    background: linear-gradient(135deg, $color1 0%, $color2 100%);
+    background: -webkit-linear-gradient(135deg, $color1 0%, $color2 100%);
+}
+
+@mixin vn_button ($radius, $color1, $color2){
+
+    display: inline-block;
+
+    font-family: $body_font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.06rem;
+    line-height: 1.26rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+
+    @include gradient_background($gradient_color_1, $gradient_color_2);
+    padding: 15px;
+    border: none;
+    border-radius: $border_radius_m;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.15);    
+}

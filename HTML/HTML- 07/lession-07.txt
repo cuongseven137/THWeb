@@ -1,0 +1,21 @@
+﻿Xử lý Responsive - Tương thích nhiều kích thước màn hình
+
+- Trên đầu đặt viewport
+- Đặt box-sizing: border-box;
+- Font body 16px cơ bản
+
+- Nhiều cột => Chuyển về 1 cột
+- Sử dụng kích thước %;
+
+- Mặc định mobile trước with: 100%
+- Trên các màn hình lớn dần Table > PC
+
+width: 100%;
+@media only screen and (min-width: 768px) { 
+    // Viet code cho cỡ màn hình lớn ở đây
+    width: 70%;
+}
+
+
+
+
